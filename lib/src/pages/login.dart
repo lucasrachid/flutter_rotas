@@ -1,4 +1,4 @@
-import 'package:aula_30_03_rotas/src/components/drawer_container.dart';
+import 'package:aula_30_03_rotas/src/services/rotas.dart';
 import 'package:flutter/material.dart';
 
 class Login extends StatelessWidget {
@@ -6,6 +6,10 @@ class Login extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const DrawerContainer(title: 'Login', child: Text('login'));
+    var rotas = Rotas();
+    return Scaffold(
+      appBar:
+          AppBar(title: const Text("Login"), backgroundColor: Colors.indigo),
+    );
   }
 }
